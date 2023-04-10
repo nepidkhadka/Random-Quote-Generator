@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  .main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#FF0066;
+  }
+  
+  .center {
+    background: #BB004B;
+    width: 500px;
+    height: 600px;
+    border-radius: 10%;
+  }
+  
