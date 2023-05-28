@@ -6,7 +6,7 @@
 }
 
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -17,16 +17,15 @@
 .center {
    border-radius: 10px;
   background: #bb004b;
-  width: 450px;
+  max-width: 1050px;
   display: none;
+  overflow: hidden;
   transition: 0.5s ease-in-out;
 }
 
 .center:hover {
-    border-radius: 20px;
-   background: #bb004b;
-   width: 450px;
-   display: none;
+  border-radius: 20px;
+   background: #9c0341;
  }
 
 .button-section {
@@ -57,7 +56,7 @@ p {
   color:whitesmoke;
   font-size: 2rem;
   padding: 20px 20px;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 p:hover{
@@ -70,4 +69,46 @@ p:hover{
   text-align: right;
   padding: 1rem;
   font-style:italic;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width:425px) {
+
+  .center {
+   width: calc(100% - 2rem);
+ }
+
+ p {
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+  .center {
+   width: calc(100% - 2rem);
+ }
+
+ p {
+  line-height: 1.8;
+  font-size: 1.9rem;
+}
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  .center {
+   width: calc(100% - 4rem);
+ }
+
+ p {
+  line-height: 1.8;
+  font-size: 1.9rem;
+}
+
 }
